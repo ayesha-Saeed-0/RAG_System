@@ -1,17 +1,25 @@
+# Streamlit and core libraries
 streamlit==1.39.0
 pandas==2.2.2
 
-langchain==0.2.12
-langchain-core==0.2.26
+# LangChain
+langchain==0.2.12           # must match core version range
+langchain-core==0.2.27      # updated to satisfy langchain dependency
 langchain-community==0.2.12
 langchain-groq==0.1.4
 langchain-text-splitters==0.2.2
+langchain-huggingface==1.0.0  # latest compatible version
 
-chromadb==0.4.24
+# Vector store
+chromadb==0.5.3             # latest stable for Chroma
+
+# Embeddings / Transformers
 sentence-transformers==2.7.0
 huggingface-hub==0.24.0
 
+# PDF / DOCX support
 PyPDF2==3.0.1
 python-docx==1.1.0
-chromadb==0.5.0
 
+# GPU / inference
+groq
