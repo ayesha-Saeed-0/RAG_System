@@ -1,16 +1,10 @@
 
 
 
-import streamlit as st
-from langchain_groq import ChatGroq
-
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_core.documents import Document
-import pandas as pd
-import tempfile
-from langchain_community.vectorstores import FAISS
+from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.docstore.document import Document
 
 
 import os
@@ -218,8 +212,8 @@ if GROQ_API_KEY:
         docs = [Document(page_content=t) for t in splitter.split_text(text)]
 
         # Vector store
-        st.info("Creating FAISS embeddings...")
-        vector_store = FAISS.from_documents(docs, embedding=embeddings)
+        st.info("Creating Chroma embeddings...")
+        vector_store = Chroma.from_documents(docs, embedding=embeddings)
 
         # Compliance check function
         def check_compliance(doc_obj):

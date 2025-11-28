@@ -6,3 +6,14 @@ langchain>=1.0.0,<2.0.0
 langchain-groq>=1.1.0,<2.0.0
 sentence-transformers>=2.2.2
 faiss-cpu>=1.7.4
+langchain-huggingface>=0.0.8
+
+chromadb>=0.3.23
+langchain-community>=0.0.47
+langchain-text-splitters>=0.1.7
+tempfile==0.0.1
+langchain-core>=0.0.208
+langchain-embeddings-huggingface>=0.0.8
+langchain-vectorstores-chroma>=0.0.8
+langchain-vectorstores-faiss>=0.0.8
+
