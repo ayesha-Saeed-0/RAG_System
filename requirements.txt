@@ -1,8 +1,10 @@
-# Streamlit for the web app
+# Streamlit
 streamlit==1.51.0
 
 # Data handling
 pandas==2.3.3
+numpy==2.3.5
+tqdm==4.67.1
 
 # Groq integration
 langchain-groq==1.1.0
@@ -10,8 +12,8 @@ langchain==0.2.12
 langchain-core==0.2.27
 
 # Chroma vector store
-chromadb==0.3.30
 langchain-community==0.4.1
+chromadb==0.3.30
 
 # Embeddings
 langchain-huggingface==1.0.0
@@ -23,7 +25,3 @@ langchain-text-splitters==1.0.0
 # Document handling
 python-docx==1.2.0
 PyPDF2==3.0.1
-
-# Utilities
-numpy==2.3.5
-tqdm==4.67.1
