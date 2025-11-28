@@ -9,8 +9,4 @@ faiss-cpu>=1.7.4
 langchain-huggingface>=0.0.8
 
 chromadb>=0.3.23
-langchain-community>=0.0.47
-langchain-text-splitters>=0.1.7
-
-langchain-vectorstores-chroma>=0.0.8
 
