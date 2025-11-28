@@ -1,31 +1,29 @@
-# Streamlit & utils
+# Streamlit for the web app
 streamlit==1.51.0
-pandas==2.2.2
-numpy==1.26.4
-tqdm==4.67.1
-python-dotenv==1.2.1
-requests==2.32.5
 
-# LangChain 0.2.x stack (all compatible)
+# Data handling
+pandas==2.3.3
+
+# Groq integration
+langchain-groq==1.1.0
 langchain==0.2.12
 langchain-core==0.2.27
-langchain-community==0.2.12
-langchain-text-splitters==0.2.2
-langchain-huggingface==0.2.2
-langchain-groq==0.1.4
 
-# Vector DB
-chromadb==0.4.24
+# Chroma vector store
+chromadb==0.3.30
+langchain-community==0.4.1
 
-# HuggingFace embeddings
-sentence-transformers==2.7.0
-huggingface-hub==0.24.0
-transformers==4.57.3
+# Embeddings
+langchain-huggingface==1.0.0
+sentence-transformers==5.1.2
 
-# Document parsing
+# Text splitting
+langchain-text-splitters==1.0.0
+
+# Document handling
+python-docx==1.2.0
 PyPDF2==3.0.1
-python-docx==1.1.0
 
-# Optional utilities
-rich==14.2.0
-groq==0.36.0
+# Utilities
+numpy==2.3.5
+tqdm==4.67.1
